@@ -70,4 +70,23 @@ public class Vendedor {
     public double obtenerComisionPorAuto(){
         return comisionPorAuto;
     }
+    
+    @Override
+
+    public String toString() {
+
+        String g = String.format("Datos de Vendedor\n"
+                    + "Nombre: %s\n"
+                    + "Edad: %s\n"
+                    + "Salario mínimo: %.2f\n"
+                    + "Número de autos: %d\n"
+                    + "Pago mensual: %.2f\n", obtenerNombres(), 
+                    obtenerEdad(),
+                    obtenerSalarioMinimo(), 
+                    obtenerNumeroAutos(),
+                    obtenerPagoMensual());
+        return g;
+
+    }
+    
 }
